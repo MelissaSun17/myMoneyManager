@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- inheriting from base html -->
+{% extends 'myMoneyManager/base.html' %}
+{% load staticfiles %}
+
+<html> 
+    <!-- changing base html title -->
+    {% block title_block %}
+    Account
+    {% endblock %} 
+    <body>
+        {% block body_block %}
+        <div class ="row">
+            <div class="col-sm-4">
+                <img src="{% static 'img/profilePicture.svg' %}" class ="img-rounded" width = 100px height = 100px" alt = "Profile Picture"/>
+                <br>
+                    <base-button type="default">Update the image</base-button>
+                    <h3>Username</h3>
+            </div>
+        <div class="col-sm-8">
+            <!-- to change  once we have data -->
+            <h1>Current month's total expenses: <button>598</button></h1> 
+            <div class="alert alert-danger"><h4>Warning! You are about to go over your budget!</h4></div>
+            <h3>Your monthly budget is: <button>£1200</button></h3>
+            <button>Set your monthly budget</button>
+        </div>
+
+        {% endblock %}
+    </body>
+</html>

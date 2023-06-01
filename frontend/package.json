@@ -1,0 +1,66 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "apexcharts": "^3.37.1",
+    "axios": "^1.3.4",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.13",
+    "flatpickr": "^4.5.1",
+    "js-cookie": "^3.0.1",
+    "nouislider": "^11.1.0",
+    "vue": "^2.6.14",
+    "vue-apexcharts": "^1.6.2",
+    "vue-axios": "^3.5.2",
+    "vue-cookies": "^1.8.3",
+    "vue-flatpickr-component": "^8.1.1",
+    "vue-lazyload": "^1.2.6",
+    "vue-router": "^3.0.2",
+    "vue2-transitions": "^0.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
+      "vue/multi-word-component-names": "off",
+      "vue/no-unused-vars": "off",
+      "vue/return-in-computed-property": "off",
+      "vue/no-unused-components": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

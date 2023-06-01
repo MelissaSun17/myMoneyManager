@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no" name="viewport">
+        <link rel="icon" href="{% static 'img/favicon.ico' %}">
+        <!-- <link href="static/css/app.c94606c1.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="{%static 'css/app.c94606c1.css' %}">
+        <!-- overriding the bootstrap css -->
+        <link rel="stylesheet" href="{%static 'css/custom.css'%}">
+
+    </head>
+        <title>
+            MyMoneyManager - 
+            {% block title_block %}
+
+            {% endblock %}   
+        </title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <base-nav type="default" effect="dark" expand>
+                <ul class="navbar-nav ml-lg-auto">
+                    <li clas="nav-item"><a href="/"><img src="{% static 'img/favicon.ico' %}" width = 50px height = 50px" alt = "myMoneyManager logo"/>MyMoneyManager</a></li>
+                    <li><a class ="nav-link nav-link-icon" href="">Home</a></li>
+                    <li><a class ="nav-link nav-link-icon" href="/account">Account</a></li>
+                    <li><a class ="nav-link nav-link-icon" href="/about">About</a></li>
+                    <!-- <img src="" alt="Profile picture"> -->
+                    <li><a class ="nav-link nav-link-icon" href="">Logout</a></li>
+                </ul>
+            </base-nav>
+        </header>
+        {% block body_block %}
+        <div>
+
+        </div>
+        
+        {% endblock %}
+    </body>
+    <footer>
+        <img src="{% static 'img/favicon.ico' %}" width = 50px height = 50px" alt = "myMoneyManager logo"/>
+    </footer>
+</html>
